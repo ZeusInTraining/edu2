@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Gecko Terminal Browser</title>
+    <script type="text/javascript">
+        homeURL="http://www.google.com";
+        urlquery=location.href.split("?")
+        if (urlquery.length>1)
+        {
+            homeURL=urlquery[1]
+        }
+
+        function navigateBack()
+        {
+            history.back();
+        }
+        function nagivateForward()
+        {
+            history.forward();
+        }
+        function goToURL(url)
+        {
+            document.getElementById("contentPane").src=url;
+        }
+        function goToHome()
+        {
+            goToURL(homeURL);
+        }
+        </script>
+</head>
+<!--<body>-->
+<frameset rows="30,*">
+<frame frameborder="0" noresize="noresize" src = "./navigationframe.html" />
+<frame frameborder="0" scrolling="auto" id = "contentPane" />
+</frameset>
+<!--</body>-->
+
+</html>

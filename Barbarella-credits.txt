@@ -1,0 +1,68 @@
+
+11-27-2002
+================================================================
+Model Name              : Barbarella
+installation directory  : quake3/baseq3/
+Author                  : Eric Grotke
+Animations		: Eric Grotke
+Sounds			: Eric Grotke (captured from the film)
+Email Address           : egrotke@yahoo.com
+Website URL		: http://www.poonis.com/Portfolio.html
+
+Model description       : "Barbarella, Queen of the Galaxy", from the 1968, Dino De Laurentis production
+			 of the same name directed by Roger Vadim and starring Jane Fonda. 
+
+			"The setting is the planet Lythion in the year 40,000.  Barbarella vanquishes evil in 
+			the forms of robots and monsters.  She also rewards, in an uninhibited manner, the
+			handsome men who assist her in her adventures."
+			  
+
+
+Additional Credits to   : <id Software>
+
+Thanks to               : <The people at polycount messageboards for all their help.>
+================================================================
+* Play Information *
+
+New Sounds              : YES
+CTF Skins               : YES
+LODS			: YES
+
+
+* Construction *
+
+Poly Count              : LOD2 - 1710 polys
+			: LOD2 - 1084 polys
+			: LOD3 -  632 polys
+Vert Count              : 858 Verts
+
+Skin Count              : 5 Skins (really just one with 5 different "color shaders")
+
+Base info               : This is my first model.  I basically followed Paul Steed's book to create the mesh.  
+			  In some areas, especially the arms, you might see similarities.  
+			  Um, buy the book, it's excellent: "Modelling a Character in 3DS Max".
+			  Thanks to Polycount for all the help getting it into the proper format.
+			
+			
+
+
+Software used           : 3ds max R4, Character Studio 3, Photoshop 6, pop_n_fresh's Max to MD3 Exporter, 
+			  NPherno's md3 Compiler, Mastaba SeeMD3.
+
+Known Bugs              : Not really a bug, but I didn't really do a good job of using symmetry to save texture space.
+
+Build/Animation time    : Honestly, about 3 months on and off, trying to learn all this stuff thoroughly.
+			  Hoping to add a custom weapon and some more skins soon.
+
+
+* How to use this model *
+
+unzip 'md3-barbarella.pk3' in the baseq3-folder in the Quake3 folder.
+
+
+* Copyright / Permissions *
+
+QUAKE(R) and QUAKE II(R) and QUAKE III(R) are registered trademarks of
+id Software, Inc.
+ 
+

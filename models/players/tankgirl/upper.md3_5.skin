@@ -1,0 +1,8 @@
+tag_head,
+tag_weapon,
+u_torso,models/players/tankgirl/upper_tekkgirl.tga
+u_bat,textures/common/nodraw
+u_rocketbra,textures/common/nodraw
+u_pauldron,textures/common/nodraw
+tag_torso,
+

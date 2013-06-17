@@ -1,0 +1,27 @@
+// csqc from Dresk
+../../../edu2/csprogs.dat
+
+config.qh
+
+defs.qh
+csqc_constants.qh
+csqc_builtins.qh
+../common/entities.qh
+../common/geckoterminal.qh
+../common/player.qh
+../common/player_anim.qh
+../common/tempent.qh
+viewmodel.qh
+../common/playermodel.qh
+
+../common/gecko_navigateex.qc
+dpextensions.qc
+
+system.qc
+../common/playermodel.qc
+../common/geckoterminal.qc
+../common/player.qc
+view.qc
+viewmodel.qc
+edu1_launch.qc
+cgame.qc

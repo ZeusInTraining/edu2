@@ -1,0 +1,6 @@
+// config.qh
+
+// let the shared code know what we are compiling it for
+#define SERVER
+
+#pragma flag off fastarrays // make dp behave with new fteqcc versions. remove when dp bug with fteqcc fastarrays is fixed

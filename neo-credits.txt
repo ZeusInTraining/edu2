@@ -1,0 +1,62 @@
+5/14/01
+================================================================
+Model Name              : Neo
+
+installation directory  : quake III arena/baseq3/
+
+Author                  : Master X
+
+Skin Author 		: Master X
+
+Email Address           : Marius_jx@hotmail.com
+
+Model description       : Neo from the matrix. The first model I have tried to create. 
+			  I have been using 3DStudio for awhile now so I decided to try 
+			  something different. Next model I create I will not make the 
+			  clothing so bulky. It kind of made the arms go into the model.
+			  I added a little spice to it and made the coat animated.
+
+
+Other info              : Feel free to show your friends
+
+Additional Credits to   : 3DStudio for making it all possible
+
+Thanks to               : me
+================================================================
+* Play Information *
+
+New Sounds              : YES
+
+CTF Skins               : YES
+
+VWEP Support            : DONT KNOW
+
+
+* Construction *
+
+Poly Count              : 2683 polys (too many)
+
+Vert Count              : 1624 Verts
+
+Skin Count              : 3 Skins
+
+Base                    : New model
+
+Editor used             : 3DStudio Max, Sound Forge, Paint Shop Pro
+
+Known Bugs              : Some Polygon clipping.
+
+Build/Animation time    : About a week mostly because the model would be torqued or messed up in 
+			  some way, and I didn't have time to fix it until the next day (school)
+
+
+* How to use this model *
+
+Just install "md3_neo.pk3" into your baseq3 directory and thats it!
+
+
+* Copyright / Permissions *
+
+QUAKE(R) and QUAKE II(R) are registered trademarks of id Software, Inc.
+
+This is my model so don't rip it off. Thank you and enjoy.

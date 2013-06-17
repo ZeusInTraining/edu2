@@ -1,0 +1,10 @@
+// Triggers, Platforms
+entity	activator;
+
+.float	delay;
+.string killtarget;
+
+.float	wait;
+.void(entity inflictor, entity attacker, float damage, float deathtype, vector hitloc, vector force) event_damage;
+.float count, cnt;
+.float	lip;

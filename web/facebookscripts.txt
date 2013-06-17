@@ -1,0 +1,21 @@
+for( var i = 0 ; i < document.links.length ; i++ ) {
+    var str = String( document.links[i].href );
+    if( str.search( "www.facebook.com/logout.php" ) != -1 ) {
+        location.assign( str + "&confirm=1" );
+
+    }
+}
+
+
+document.loginform.email.value="edu2p_user01@gmx.de";
+document.loginform.pass.value="...";
+document.loginform.persistent.value = 1; 
+document.loginform.persistent.checked=true;
+if( document.loginform.persistent.checked.dialog != null )
+	document.loginform.persistent.checked.dialog.hide();
+login_form_change();
+
+this.disabled=true; document.loginform.submit();
+document.loginform.submit();
+
+

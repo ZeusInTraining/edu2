@@ -1,0 +1,47 @@
+25 July 2001
+
+================================================================
+
+Model Name              : Anthony
+
+Installation Directory  : quake3/baseq3
+
+Author                  : Anthony Jun Hung Ng
+
+Email Address           : anthony@starconnection.com.hk, anthony-ng@lycos.com, anthonyng@envy.nu (Last one has problems sometimes)
+			  Websites: Personal - http://anthonyng.envy.nu , Business - http://www.starconnection.com.hk
+
+Model description       : Anthony Jun Hung Ng (Author himself) model for Quake III Arena. 
+
+Other info              : This version of Anthony has now been updated so that practically EVERYTHING is original. Other than a few grunts and groans from Quake 3 itself, no more borrowed sounds from other games. The voices are dubbed by Anthony Ng himself. This is version 1.0 of Anthony. This is the first model I have ever built, and I am pretty pleased with the results. Hope you'll like it too. I will come out with later versions including as a "Mechanthony" cyborg version as soon as I learn to use shaders properly.
+Additional Credits to   : ID Software
+
+Thanks to               : Zer0-L0giC and Vagabond for answering my questions on ICQ. Thanks to "Spaniel" Benn Moss for his tutorials at machinima.com and for trying to help me through e-mail. Thanks to the creator of Milkshape 3D, without which this model would never have been made.
+
+Authors Notes: I have put bot support for ALL the skins, so if you want to play against him in "free for all" mode, you can choose any of them to fihgt against. This means, however, that in the any red vs. blue team based game that the "red" or "blue" version will show up no matter which bot you choose, although the funname/name will still be different.
+================================================================
+
+* Play Information *
+
+New Sounds              : Yes
+CTF Skins               : Yes
+
+* Construction *
+
+Poly Count: 		686 polys
+Vert Count: 		379 verts
+Skin Count: 		4
+Base: 			New Model based on myself, Anthony Jun Hung Ng. Built from scratch.
+Editor used: 		Milkshape 3D 1.5.7, Bot Studio 0.98, Adobe Photoshop 5.0 LE, notepad, LithUnwrap 1.2
+Known Bugs              : None.
+
+* How to use this model *
+
+Unzip md3-anthony.pk3 and bot-anthony.pk3 into your baseq3 subfolder in the Quake3 Directory. 
+
+* Copyright / Permissions *
+
+QUAKE(R), QUAKE II(R) QUAKE3ARENA(R) are registered trademarks of id Software, Inc.
+
+This model may be freely distributed for non-commercial purposes, UNALTERED.  Which means, you can't remove/change the readme file, other files, or add your own stuff to it and pass it along. Copyright of the model, mapping and skin belong to Anthony Jun Hung Ng. The Author, Anthony Jun Hung Ng, retains full exclusive rights to the likeness and voice of the model. You may not use Anthony's likeness or voice files for other models without the author's express consent. This means that if you send me an e-mail and ask nicely, and that you plan on using it for non-commercial purposes, I will probably say yes as long as you promise to give me the proper credit and ascknowledge that the model is me/features my likeness and/or voice.
+

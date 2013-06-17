@@ -1,0 +1,10 @@
+void ViewModel_Init();
+void ViewModel_Update();
+
+// Set the current view model
+void ShowViewModelInstant (string mdl);
+void ShowViewModelRaise (string mdl, float raiseDist, float raiseTime);
+
+// Hide the current view model
+void HideViewModelInstant ();
+void HideViewModelLower (float lowerDist, float lowerTime);

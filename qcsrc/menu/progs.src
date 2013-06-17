@@ -1,0 +1,47 @@
+../../../edu2/menu.dat
+
+config.qh
+msys.qh
+mbuiltin.qh
+
+localization.qh
+
+oo/base.h
+
+../common/util.qh
+../common/mapinfo.qh
+../common/campaign_common.qh
+
+../common/player_anim.qh
+../common/playermodel.qh
+
+../common/gecko_navigateex.qc
+
+gamecommand.qh
+menu.qh
+draw.qh
+skin.qh
+nexuiz/util.qh
+
+oo/classdefs.h
+	classes.c
+
+oo/constructors.h
+	classes.c
+oo/implementation.h
+	classes.c
+
+../common/util.qc
+../common/gamecommand.qc
+gamecommand.qc
+menu.qc
+draw.qc
+nexuiz/util.qc
+
+../common/campaign_file.qc
+../common/campaign_setup.qc
+../common/mapinfo.qc
+
+../common/playermodel.qc
+
+localization.qc

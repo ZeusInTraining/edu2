@@ -1,0 +1,10 @@
+u_coat,models/players/neo/coat.tga
+u_coatback,models/players/neo/coatback.tga
+u_torso,models/players/neo/torso.tga
+u_rhand,models/players/neo/hand.tga
+u_lhand,models/players/neo/hand.tga
+u_gun1,models/players/neo/gun.tga
+u_gun2,models/players/neo/gun.tga
+tag_weapon,
+tag_torso,
+tag_head,

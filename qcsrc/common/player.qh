@@ -1,0 +1,17 @@
+// Enable for clientside player models
+#define CLIENTSIDE_PLAYERMODELS
+
+.float clientNum;
+
+#ifdef CLIENT
+.vector v_angle;
+
+#ifdef CLIENTSIDE_PLAYERMODELS
+vector net_pmove_org;
+entity localPlayer;
+#endif
+#endif
+
+#ifdef SERVER
+void Player_UpdateModel( entity player );
+#endif

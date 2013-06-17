@@ -1,0 +1,21 @@
+// contains entity enums, etc.
+
+#ifdef SERVER
+// we need to version entities
+.float Version;
+
+.float( entity viewer ) SendEntity;
+#endif
+#ifdef CLIENT
+.void() UpdateEntity;
+// TODO: merge cgame and game constants.. BlackHC
+.void() RemoveEvent;
+#endif
+
+//const float TE_PLAYERMODEL = 1;
+// we could use some funky #include stuff for this BTW - BlackHC
+// shared entity types
+enum {
+	ET_GECKO,
+	ET_PLAYER
+};

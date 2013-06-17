@@ -1,0 +1,40 @@
+Stuff to know:
+
+angles: pitch yaw roll
+
+coordinate axes from player's viewpoint: x = forward, y = left, z = up
+
+###
+GTKRadiant entities.def Format:
+
+It starts with "/*QUAKED ". The name of the entity follows.
+Then " (r g b)", where r, g and b are floats that specify the color that our beloved entity should have in GTKR. Next two vectors *can* follow: "(minx miny minz) (maxx maxy maxz)", which obviously specify the min and max sizes of the entity, or a single ? to make it use the exact brush size. Then flags (till new line) are parsed.
+The flags are treated as bit flags, with "-" not being displayed (thus unused). E.g. setbit0 - setbit2 - setbit4
+will display setbitX in the entity inspector and set spawnflags accordingly
+(if all three are set, it will be 1 + 4 + 16 in this example)
+Now the rest till */ is parsed as the comment.
+Possibly the following things may be defined at the end:
+model= modelname
+texture= texturename
+skin= skinname
+frame= framename.
+
+The following entities are treated differently (regarding their appearance):
+light, dlight, lightjunior => drawn as light
+info_player, path_corner, team_ctf, misc_teleporter_dest => drawn as angle
+path => drawn as path
+misc_model => drawn as misc_model (yay).
+
+Comment from GTKR:
+the classname, color triple, and bounding box are parsed out of comments
+A ? size means take the exact brush size.
+
+/ *QUAKED <classname> (0 0 0) ?
+/ *QUAKED <classname> (0 0 0) (-8 -8 -8) (8 8 8)
+
+Flag names can follow the size description:
+
+/ *QUAKED func_door (0 .5 .8) ? START_OPEN STONE_SOUND DOOR_DONT_LINK GOLD_KEY SILVER_KEY
+###
+
+

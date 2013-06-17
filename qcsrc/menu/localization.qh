@@ -1,0 +1,5 @@
+// localization.qh
+// Andreas Kirsch 2008
+
+// returns the mapped string
+string( string x ) _;

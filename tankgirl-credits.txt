@@ -1,0 +1,188 @@
+** The Lia Fail Skinset  **
+
+Author       : Kevin 'Rorshach' Johnstone
+Model        : Tankgirl by Wraith
+Email         : rorshach@quakefiles.com
+Web          : www.quakefiles.com/rorshach
+
+Info:
+
+I made the Lia Fail skin for my wife Kirsten's Birthday.
+Lia Fail is a nickname I gave her in October '98 when I initially met her online.
+It means 'The Navel of the Goddess' and I thought it was an apt nickname for her
+as that is the way I see her :)
+I also made the LiaFail skin to try some more purist shading techniques again.
+
+The CTF skins are more inkeeping with the Tankgirl model style.
+Thanks to Wraith for the Cool model.
+Thanks to Kirsten for allowing me to borrow her face.
+
+Enjoy the skins
+
+r.
+
+Copyright: Kevin 'Rorshach' Johnstone
+PLEASE dont steal these skins, they are for public use not individual clans.
+It is NOT to be cut and pasted or modified by anyone but me!
+3.21.2000   Quake 3 Arena Skin & SoundPak for Tankgirl
+================================================================
+Accessory's Name	: Tanicha
+Installation directory  : Quake III Arena/baseq3/
+Author                  : FReAK
+Email Address           : freak@cascadia.net
+URL			            : http://kyle.cinemazone.com
+
+
+Accessory's description	: This is a skin and a soundpak for the kickass Tank Girl player model from Wrath. 
+			  The name "Tanicha" is taken from one issue where Tank Girl is told a story of herself as a vengful Austrailian spirit that wastes a bunch of scumbags trying to oppress the Aboriginal peoples! 
+			  I have always loved Tank Girl (even the movie was pretty good).  But I was a little disappointed when there wasn't a comic style model in the pak.  Even more disturbing was the fact that she sounded like Sarge!  I am very pleased with the results of this skin and welcome any feedback anyone feels is necessary. This is my third Quake skin ever.  I spent hours and hours on this model, so I hope everyone likes it as much as I do.
+
+Other info              : Tank Girl comics are WAY beetter than the movie. 
+			  One Case in point - in the film, why the HELL doesn't anyone call her Tank Girl? They all call her "Rebecca."  That was pretty damn gay.
+
+Additional Credits to   : Wrath, id Software, Gutboy, Psychodroid & Matthew "M@tthi@§" Mella
+
+Thanks to               : Like the Oscars? 
+			  I'd like to thank Jamie Hewlett and Alan Martin for providing the world with the gun-toting bitch           	 	 	 	 	 	 						                                               goddess, Tank Girl
+================================================================
+* Construction *
+Base                    : All 3 original skins for TankGirl served as a base:
+			  Default, TekkGirl & TinTin (Soundpak doesn't apply)
+Editor used         	: Skin-> Adobe Photoshop 5.5, JavaMD3 Model Viewer & devmap stuff in Q3
+			: Sound-> SoundForge and my copy of the Movie
+Known Bugs              : There are known bugs with the skin, if a bug is found, please contact me at freak@cascadia.net
+Build time		: Probably about 5 to 7 solid hours (maybe more)
+
+
+* How to use this accessory *
+
+Unzip the skin-tanicha.pk3 into your "baseq3" folder and feel the love.....
+
+
+* Copyright / Permissions *
+
+QUAKE III ARENA (R) is a registered trademark of id Software, Inc.
+TANK GIRL is probably a registered trademark of Dark HorseComics, DC Vertigo, or United Atrists (i just don't know!!)
+
+Quake 3 Arena Skin For Tankgirl
+================================================================
+Accessory's Names	: Tekkgirl
+Installation directory  : Quake III Arena/baseq3/filename.pk3
+Author                  : PsychoDroid
+Email Address           : psychodroid@hotmail.com
+URL			: http://www.angelfire.com/games/psychodroid/
+
+Accessory's description	: This is my first Q3 skin done from scratch
+			with no base skin to work off of, just Wrath's
+			UV map.  It came to me when I noticed the shape
+			of the models head would really work well with 
+			a Anime/Manga sytle skin.
+			
+Additional Credits to   : Wrath, id Software.
+
+Thanks to               : id Software, Polycount, Erwin'KLR8'Vervaet.
+================================================================
+* Construction *
+Base                    : none.
+Editor used             : Photoshop 5.0, Java MD3 Model Viewer, notepad.
+Known Bugs              : ask Wrath
+Build/Animation time    : don't remember...its a blur.
+
+* How to use this accessory *
+just unzip the skin-tekkgirl.pk3 into yer "baseq3" folder and enjoy!
+
+* Copyright / Permissions *
+QUAKE(R), QUAKE II(R) and QUAKE III ARENA(R) are registered trademarks of id Software, Inc.
+
+"TINTIN" skin for Wrath's "tank Girl" PPM
+by Matthew "M@tthi@§" Mella
+xmullet@hotmail.com
+
+Didn't really have time to tidy up the .tgas, so the actual files look a bit messy, but the
+skin's not too bad.  Not perfect, but Wrath needed some skins, so I thought I'd get this 
+one done ASAP.
+
+A personal vision really... fishnet... goths... someone mentioned Punkchick on the Polycount 
+UBB , and I like to please.  Not too strictly TG, but then not too far off.
+
+Everythings from scratch, it's my first released Q3 skin (if it gets released :( ).  
+
+Can't wait to see the model on the streets!
+
+BTW TinTin... geddit?  The bra?  Nevermind... <updated May 8, 2000>
+<updated May 2, 2000>
+<March 3, 2000>
+================================================================
+Model Name:		Tank Girl
+Installation Directory:	baseq3\md3-tankgirl.pk3
+Model Author(s):	Wrath
+Skin Author(s):		Gutboy
+			Psychodroid
+			Matthew "M@tthi@§" Mella
+			FReAK (Tanicha)
+			Kevin 'Rorshach' Johnstone (Lia Fail, CTF skins)
+Shader Author(s):	Wrath (general)
+			Psychodroid (Tekk Girl)
+			Matthew "M@tthi@§" Mella (TinTin)
+Email Address:		wrath@polycount.com
+			gutboy@lineone.net
+			psychodroid@hotmail.com
+			xmullet@hotmail.com
+			freak@cascadia.net
+			rorshach@quakefiles.com
+
+Model description:	Tank Girl, from the comics and movie.
+			See http://www.worthing.co.uk/tank.htm for a more thorough history of the character, or do your own
+			net search for "Tank Girl" and see what comes up.
+
+Other info:		Gutboy has done some bot files...but I haven't had a chance to sort through them and make sure they all work yet,
+			so as soon as I get a chance to do that, I'll release them as well.  They seem a bit sparse on dialogue,
+			if any die hard Tank Girl fans would be interested in scripting some bot chat, I'd be more than happy
+			to tell them what we need and put together a nice bot file for this model.
+
+Additional Credits to:	<id Software, Jamie Hewlett and Alan Martin>
+
+Thanks to:		Gutboy, Psychodroid, & Matthew "M@tthi@§" Mella, and Kevin 'Rorshach' Johnstone for doing skins.
+			NPherno for being such a great lay and being so good with tools.
+			NPherno's mom...for pretty much the same reasons.
+
+Author(s) notes:	This model was built, mapped, and animated in about a week.  I put the model up on my
+			site and posted a message at www.polycount.com asking for intersted parties to do skins
+			for her.
+
+			After about a month, I still hadn't gotten anything back.  Gutboy came forward and volunteered to
+			skin her, and he sent me a finished skin less than a week later.
+			Since then, there have been a couple of skins that managed to leak in at the last second...both
+			of which are top notch efforts and happily addeded to the default flavor.
+
+			I'm still hoping that this model might fulfill my life long fantasy of releasing a player model
+			that gets 2 bajillion skins done for it by the community. ;)
+================================================================
+* Play Information *
+
+Skins:			default, CTF, tekkgirl, tintin, snafu, liafail
+Bot support:		No
+New Sounds:		Yes, compiled by FReAK (freak@cascadia.net)
+CTF Skins:		No
+
+* Construction *
+Who did what:		Wrath modeled, mapped, and animated Tank Girl.
+			Gutboy painted the default skin, which I was calling "Buff Girl"
+			PsychoDroid painted the Tekk Girl skins, and makes excellent use of alpha channels :)
+			Matthew "M@tthi@§" Mella painted the TinTin skins, they're not nearly as crappy as he says they are ;)
+			Kevin 'Rorshach' Johnstone painted the Lia Fail skin and also was kind enough to whip up some CTF skins as well.  BIG THANKS to him :)
+
+Tools(s) used:		3DS Max 2.5, Character Studio, NST v.1, Corel Photopaint, Adobe Photoshop, notepad, NPherno's MD3 Compiler, and in house tools
+
+* How to use this model *
+<INSTALLATION INFO>
+Unzip md3-tankgirl.pk3 and snd-tankgirl.pk3 into the baseq3 folder.
+In order to use this model as a player model, it may be necessary to create a baseq3/models/players/tankgirl folder under the Quake3 directory, and put a file in it.
+The model can also be used by entering "\model tankgirl" in the console...
+
+* Copyright / Permissions *
+QUAKE(R) and QUAKE III Arena(R) are registered trademarks of id Software, Inc.
+
+This model may be freely distributed in any form, UNALTERED.  Which means, you can't remove/change the readme file, other files, or add your own stuff to it and pass it along.
+Copyright of the model, mapping, and animations belong to me.  Copyright of the default skin belongs to Gutboy.  Copyright of the Tekk Girl skin belongs to PsychoDroid.  Copyright of the TinTin Skin belongs to Matthew "M@tthi@§" Mella.
+Don't steal our stuff.  If you absolutely have to use it for something...have the decency to drop one of us an email and ask first.

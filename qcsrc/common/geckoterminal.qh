@@ -1,0 +1,23 @@
+// gecko terminal header
+
+const string GECKO_PATH_PREFIX = "textures/_dynamic/gecko/";
+const float GECKO_PATH_PREFIX_LENGTH = 24;
+
+const float GECKO_TERMINAL_MAX_DISTANCE = 24;
+const string GECKO_TERMINAL_CURSOR = "gfx/cursor";
+
+.string targetURL;
+
+#ifdef CLIENT
+// TODO use perspective scaling too
+const float GECKO_TERMINAL_CURSOR_SCALE = 0.6;
+
+entity gecko_terminal_current;
+
+void() gecko_init_browser_data;
+
+// csqc-only fields
+.string geckoInstanceName;
+// used to determine the correct distance from the terminal - is there a better solution? (origin is always 0 0 0)
+.vector centroid;
+#endif

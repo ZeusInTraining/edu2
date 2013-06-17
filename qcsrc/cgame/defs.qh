@@ -1,0 +1,181 @@
+//NOTE: THIS IS AN INTERFACE FILE. DO NOT EDIT.
+//MODIFYING THIS FILE CAN RESULT IN CRC ERRORS.
+//YOU HAVE BEEN WARNED.
+
+//feel free to look though. :)
+
+/*
+==============================================================================
+
+			SOURCE FOR GLOBALVARS_T C STRUCTURE
+
+==============================================================================
+*/
+
+//
+// system globals
+//
+entity		self;
+entity		other;
+entity		world;
+float		time;
+float		frametime;
+
+//the entnum
+float 		player_localentnum;
+//the playernum
+float 		player_localnum;
+//a constant filled in by the engine. gah, portability eh?
+float		maxclients;
+
+//player movement
+float		clientcommandframe;
+//clientframe echoed off the server
+float		servercommandframe;
+
+string		mapname;
+
+//
+// global variables set by built in functions
+//
+// set by makevectors()
+vector		v_forward, v_up, v_right;
+
+// set by traceline / tracebox
+float		trace_allsolid;
+float		trace_startsolid;
+float		trace_fraction;
+vector		trace_endpos;
+vector		trace_plane_normal;
+float		trace_plane_dist;
+entity		trace_ent;
+float		trace_inopen;
+float		trace_inwater;
+
+//
+// required prog functions
+//
+void()		CSQC_Init;
+void()		CSQC_Shutdown;
+float(float released, float scan, float ascii)	CSQC_InputEvent;
+void()		CSQC_UpdateView;
+float(string s)	CSQC_ConsoleCommand;
+
+
+//these fields are read and set by the default player physics
+vector		pmove_org;
+vector		pmove_vel;
+vector		pmove_mins;
+vector		pmove_maxs;
+//retrieved from the current movement commands (read by player physics)
+float		input_timelength;
+vector		input_angles;
+//forwards, right, up.
+vector		input_movevalues;
+//attack, use, jump (default physics only uses jump)
+float		input_buttons;
+
+float		movevar_gravity;
+float		movevar_stopspeed;
+float		movevar_maxspeed;
+//used by NOCLIP movetypes.
+float		movevar_spectatormaxspeed;
+float		movevar_accelerate;
+float		movevar_airaccelerate;
+float		movevar_wateraccelerate;
+float		movevar_friction;
+float		movevar_waterfriction;
+//the local player's gravity field. Is a multiple (1 is the normal value)
+float		movevar_entgravity;
+
+//================================================
+// flag for structure dumping
+void		end_sys_globals;
+//================================================
+
+/*
+==============================================================================
+
+			SOURCE FOR ENTVARS_T C STRUCTURE
+
+==============================================================================
+*/
+
+//
+// system fields (*** = do not set in prog code, maintained by C code)
+//
+// *** model index in the precached list
+.float		modelindex;
+// *** origin + mins / maxs
+.vector		absmin, absmax;
+
+// *** the ent number as on the server
+.float		entnum;
+.float		drawmask;
+.void()		predraw;
+
+.float		movetype;
+.float		solid;
+
+// ***
+.vector		origin;
+// ***
+.vector		oldorigin;
+.vector		velocity;
+.vector		angles;
+.vector		avelocity;
+
+// spawn function
+.string		classname;
+.string		model;
+.float		frame;
+.float		skin;
+.float		effects;
+
+// bounding box extents reletive to origin
+.vector		mins, maxs;
+// maxs - mins
+.vector		size;
+
+.void()		touch;
+.void()		use;
+.void()		think;
+// for doors or plats, called when can't push other
+.void()		blocked;
+
+.float		nextthink;
+
+.entity		chain;
+
+.string		netname;
+
+.entity 	enemy;
+
+.float		flags;
+
+.float		colormap;
+
+// who launched a missile
+.entity		owner;
+
+//================================================
+// flag for structure dumping
+void		end_sys_fields;
+//================================================
+
+// Additional OPTIONAL Fields and Globals
+float		intermission;
+float		sb_showscores;
+.string		message;
+float		coop;
+float		deathmatch;
+
+float		dmg_take;
+float		dmg_save;
+vector		dmg_origin;
+
+// Darkplaces Render Modifications
+.float alpha;
+.vector colormod;
+.float scale;
+.float renderflags;

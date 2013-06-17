@@ -1,0 +1,272 @@
+// originally from BlackHC's Zymotic branch
+// constants.qh
+// vanilla quake constants (reformatted to make use of fteqcc's features)
+
+typedef float bool;
+
+// logical true/false
+enum {
+	FALSE = 0,
+	TRUE = 1
+};
+
+// boolean contants you'll want to use
+enum {
+	false = 0,
+	true = 1
+};
+
+// cgame and game use the same null entity constant
+const entity NULL; // = world
+
+// edict.flags
+enumflags {
+	FL_FLY,
+	FL_SWIM,
+	FL_CLIENT,
+	// (for enter / leave water splash) FL_INWATER
+	FL_UNUSED8,
+	FL_UNUSED16,
+	FL_MONSTER,
+	// player cheat
+	FL_GODMODE,
+	// player cheat
+	FL_NOTARGET,
+	// extra wide size for bonus items
+	FL_ITEM,
+	// standing on something
+	FL_ONGROUND,
+	// not all corners are valid
+	FL_PARTIALGROUND,
+	// player jumping out of water
+	FL_WATERJUMP,
+	// (for jump debouncing) FL_JUMPRELEASED
+	FL_UNUSED4096
+};
+
+// edict.movetype values
+enum {
+	// never moves
+	MOVETYPE_NONE,
+	// (MOVETYPE_ANGLENOCLIP)
+	MOVETYPE_UNUSED1,
+	// (MOVETYPE_ANGLECLIP)
+	MOVETYPE_UNUSED2,
+	//EXT: DP_MONSTERWALK
+	// MOVETYPE_WALK is permitted on non-clients, too
+	MOVETYPE_WALK,
+	// discrete, not real time unless fall
+	MOVETYPE_STEP,
+	MOVETYPE_FLY,
+	// gravity
+	MOVETYPE_TOSS,
+	// no clip to world, push and crush
+	MOVETYPE_PUSH,
+	// no clipping at all
+	MOVETYPE_NOCLIP,
+	// fly with extra size against monsters
+	MOVETYPE_FLYMISSILE,
+	MOVETYPE_BOUNCE,
+	// bounce with extra size (11)
+	MOVETYPE_BOUNCEMISSILE
+	//EXT: DP_MOVETYPEFOLLOW
+	//MOVETYPE_FOLLOW
+};
+
+// MOVETYPE_FOLLOW explanation:
+// MOVETYPE_FOLLOW implemented, this uses existing entity fields in unusual ways:
+// aiment - the entity this is attached to.
+// punchangle - the original angles when the follow began.
+// view_ofs - the relative origin (note that this is un-rotated by punchangle, and that is actually the only purpose of punchangle).
+// v_angle - the relative angles.
+// here's an example of how you would set a bullet hole sprite to follow a bmodel it was created on, even if the bmodel rotates:
+// hole.movetype = MOVETYPE_FOLLOW; // make the hole follow
+// hole.solid = SOLID_NOT; // MOVETYPE_FOLLOW is always non-solid
+// hole.aiment = bmodel; // make the hole follow bmodel
+// hole.punchangle = bmodel.angles; // the original angles of bmodel
+// hole.view_ofs = hole.origin - bmodel.origin; // relative origin
+// hole.v_angle = hole.angles - bmodel.angles; // relative angles
+
+// edict.solid values
+enum {
+	// no interaction with other objects
+	SOLID_NOT,
+	// touch on edge, but not blocking
+	SOLID_TRIGGER,
+	// touch on edge, block
+	SOLID_BBOX,
+	// touch on edge, but not an onground
+	SOLID_SLIDEBOX,
+	// bsp clip, touch on edge, block
+	SOLID_BSP
+	//EXT: DP_SOLIDCORPSE
+	// the entity will not collide with SOLID_CORPSE and SOLID_SLIDEBOX entities (and likewise they
+	// will not collide with it), this is useful if you want dead bodies that are shootable but do not obstruct
+	// movement by players and monsters, note that if you traceline with a SOLID_SLIDEBOX entity as the
+	// ignoreent, it will ignore SOLID_CORPSE entities, this is desirable for visibility and movement
+	// traces, but not for bullets, for the traceline to hit SOLID_CORPSE you must temporarily force
+	// the player (or whatever) to SOLID_BBOX and then restore to SOLID_SLIDEBOX after the traceline.
+	//SOLID_CORPSE
+};
+
+//definitions that id Software left out
+//these are passed as the 'nomonsters' parameter to traceline/tracebox (yes really this was supported in all quake engines, nomonsters is misnamed)
+enum {
+	TRACE_NORMAL,
+	TRACE_NOMONSTERS,
+	// same as movement with .movetype == MOVETYPE_FLYMISSILE
+	TRACE_MISSILE,
+	//EXT: DP_QC_TRACE_MOVETYPE_WORLDONLY
+	// allows traces to hit only world (ignoring all entities, unlike MOVE_NOMONSTERS which hits all
+	// bmodels), use as the nomonsters parameter to trace functions
+	TRACE_WORLDONLY,
+	//EXT: DP_QC_TRACE_MOVETYPE_HITMODEL
+	// allows traces to hit alias models (not sprites!) instead of entity boxes,
+	// note that you can hit invisible model entities (alpha < 0 or EF_NODRAW or model "", it only checks modelindex)
+	TRACE_HITMODEL
+};
+
+// takedamage values
+enum {
+	DAMAGE_NO,
+	DAMAGE_YES,
+	// entity that its worth to aim at
+	DAMAGE_AIM
+};
+
+// point content values
+float	CONTENT_EMPTY			= -1;
+float	CONTENT_SOLID			= -2;
+float	CONTENT_WATER			= -3;
+float	CONTENT_SLIME			= -4;
+float	CONTENT_LAVA			= -5;
+float	CONTENT_SKY			= -6;
+
+vector	VEC_ORIGIN = '0 0 0';
+vector	VEC_HULL_MIN = '-16 -16 -24';
+vector	VEC_HULL_MAX = '16 16 32';
+
+vector	VEC_HULL2_MIN = '-32 -32 -24';
+vector	VEC_HULL2_MAX = '32 32 64';
+
+// protocol bytes
+float	SVC_TEMPENTITY		= 23;
+float	SVC_KILLEDMONSTER	= 27;
+float	SVC_FOUNDSECRET		= 28;
+float	SVC_INTERMISSION	= 30;
+float	SVC_FINALE		= 31;
+float	SVC_CDTRACK		= 32;
+float	SVC_SELLSCREEN		= 33;
+
+// sound channels
+// channel 0 never willingly overrides
+// other channels (1-7) allways override a playing sound on that channel
+enum {
+	CHANNEL_AUTO,
+	CHANNEL_WEAPON,
+	CHANNEL_VOICE,
+	CHANNEL_ITEM,
+	CHANNEL_BODY,
+	CHANNEL_UNUSED5,
+	CHANNEL_UNUSED6,
+	CHANNEL_UNUSED7
+};
+
+// attenuation for sounds
+// use 1000/distance for custom max distances
+enum {
+	ATTENUATION_NONE,
+	ATTENUATION_NORMAL,
+	ATTENUATION_IDLE,
+	ATTENUATION_STATIC
+};
+
+// entity effects
+
+//EXT: PRYDON_CLIENTCURSOR
+//EXT: DP_EF_ADDITIVE
+//EXT: DP_EF_BLUE
+//EXT: DP_EF_FLAME
+//EXT: DP_EF_FULLBRIGHT
+//EXT: DP_EF_NODEPTHTEST
+//EXT: DP_EF_NODRAW
+//EXT: DP_EF_NOSHADOW
+//EXT: DP_EF_RED
+//EXT: DP_EF_STARDUST
+//EXT: DP_ENT_LOWPRECISION
+enumflags {
+	// creates a bright field of particles
+	EFFECT_BRIGHTFIELD,
+	// creates a muzzleflash
+	EFFECT_MUZZLEFLASH,
+	// brighter light
+	EFFECT_BRIGHTLIGHT,
+	// dimmer light (yay)
+	EFFECT_DIMLIGHT,
+	// prevents server from sending entity to client (forced invisible,
+	// even if it would have been a light source or other such things)
+	EFFECT_NODRAW,
+	// additive blending when this object is rendered
+	EFFECT_ADDITIVE,
+	// entity emits blue light (used for quad)
+	EFFECT_BLUE,
+	// entity emits red light (used for invulnerability)
+	EFFECT_RED,
+	EFFECT_UNUSED,
+	// entity is always brightly lit,
+	EFFECT_FULLBRIGHT,
+	// entity is on fire
+	EFFECT_FLAME,
+	// entity emits bouncing sparkles in every direction
+	EFFECT_STARDUST,
+	// realtime lights will not cast shadows from this entity (but can still illuminate it)
+	EFFECT_NOSHADOW,
+	// makes entity show up to client even through walls, useful with EF_ADDITIVE
+	// for special indicators like where team bases are in a map, so that people don't get lost
+	EFFECT_NODEPTHTEST,
+	// allows cursor to highlight entity (brighten)
+	EFFECT_SELECTABLE,
+	// uses low quality origin coordinates, reducing network traffic compared to the default high
+	// precision, intended for numerous objects (projectiles/gibs/bullet holes/etc).
+	EFFECT_LOWPRECISION = 4194304
+};
+
+//EXT: TENEBRAE_GFX_DLIGHTS
+//enumflags {
+	// light does not cast shadows
+	//PFLAGS_NOSHADOW,
+	// light has a corona flare
+	//PFLAGS_CORONA,
+	// light enable (without this set no light is produced!)
+	//PFLAGS_FULLDYNAMIC
+//};
+
+// messages
+enum {
+	// unreliable to all
+	MSG_BROADCAST,
+	// reliable to one (msg_entity)
+	MSG_ONE,
+	// reliable to all
+	MSG_ALL,
+	// write to the init string
+	MSG_INIT,
+	// CSQC entity send
+	MSG_ENTITY = 5
+};
+
+//EXT: DP_SV_BOTCLIENT
+//enum {
+	//CLIENTTYPE_DISCONNECTED,
+	//CLIENTTYPE_REAL,
+	//CLIENTTYPE_BOT,
+	//CLIENTTYPE_NOTACLIENT
+//};
+
+//EXT: FRIK_FILE
+//enum {
+	//FILE_READ,
+	//FILE_APPEND,
+	//FILE_WRITE
+//};
+

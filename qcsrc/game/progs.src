@@ -1,0 +1,32 @@
+// game/progs.src
+../../../edu2/progs.dat
+
+config.qh
+
+// server <-> engine 'interface'
+defs.qh
+constants.qh
+builtins.qh
+../common/entities.qh
+../common/geckoterminal.qh
+../common/player.qh
+../common/player_anim.qh
+// meh
+../common/playermodel.qh
+../common/tempent.qh
+chat.qh
+
+dpextensions.qc
+sv_user.qc
+
+../common/geckoterminal.qc
+../common/player.qc
+
+chat.qc
+
+defs_plat.qh
+g_subs.qc
+g_triggers.qc
+t_plats.qc
+
+game.qc

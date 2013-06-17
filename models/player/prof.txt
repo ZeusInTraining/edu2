@@ -1,0 +1,5 @@
+Professor
+models/player/professor
+0
+models/player/insurrectionist.zym
+

@@ -1,0 +1,6 @@
+//AK 08
+
+void() LocalChat_Init;
+
+// self is the current client
+void( string pMessage ) LocalChat_Say;

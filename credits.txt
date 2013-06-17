@@ -1,0 +1,74 @@
+﻿Game Design:
+Peter Fey
+Alexander Köhler
+Wiebe Fölster
+Denise Urbach 
+Alex Paulski
+
+
+Editoren:
+Thorsten Flügel
+Sebastian Kratz
+Tobias Seeber
+Ji Li
+Frank Wagner
+Martin Schneider
+
+
+Texturen und Modelle:
+Grit Tirian
+Jakob Maier
+Florian Jurig
+Torsten Felix
+Julia Bierau
+Constance Hennig
+Thomas Jahn
+Diana Zschögener
+
+
+Sound und Musik:
+Michael Moers
+Fabian Ruckteschler
+
+
+Content:
+Franziska Lehnert
+Steve Schenzel
+Stefanie Haupt 
+Katrin Kimpfbeck
+Lars Burkhardt
+Christoph Matiss
+Daniel Maßberg
+Sebastian Schieweck
+
+
+Dokumentation und Öffentlichkeitsarbeit:
+Franziska Lehnert
+Daniel Wodniczak
+Andreas FJ Waidosch
+
+
+Programmierung:
+Frank Richter
+
+Producer:
+Thorsten Flügel
+
+
+Gesamtmanagement:
+Dr. Jörg Müller- Lietzkow (a.k.a Masterchief)
+
+
+
+
+Entstanden im Rahmen eines Seminars
+an der Friedrich-Schiller-Universität Jena
+Fakultät für Sozial- und Verhaltenswissenschaften
+Bereich Medienwissenschaft
+Arbeitsfeld Kommunikationswissenschaft
+Sommersemester 2007
+
+
+Basiert auf und benutzt
+Nexuiz von Alientrap
+www.nexuiz.org      www.alientrag.org

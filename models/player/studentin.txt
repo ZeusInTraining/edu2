@@ -1,0 +1,6 @@
+Studentin
+models/player/pyria-studentin
+0
+models/player/pyria.zym
+
+Weibliche Studentin

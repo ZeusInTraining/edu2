@@ -1,0 +1,53 @@
+3 January 2000
+
+================================================================
+
+Model Name              : Ben
+
+Installation Directory  : quake3/baseq3
+
+Author                  : Obi-Wan
+
+Email Address           : obihb@yahoo.com
+
+Model description       : Well, I'm sure everybody remembers the old classic, Full Throttle from
+			  Lucas Arts. One of the best adventure games ever made. Well, that's the
+			  clue, now check out the model!!
+
+Other info              : I've included a "wireframe" skin inside the pak file for anyone who feels
+			  the need to draw a skin for this model. This just makes it a little easier.
+
+Additional Credits to   : ID Software for the best game ever... until the sequel??...  hhmmm..
+
+Thanks to               : Dave "NPherno" Eaton II for the MD3 Compiler
+			  Pop N Fresh for the 3D Studio Max plugin
+
+================================================================
+
+* Play Information *
+
+New Sounds              : No
+CTF Skins               : Yes
+
+* Construction *
+
+Poly Count              : 930
+Vert Count              : 784
+Skin Count              : 3
+Base                    : New Model
+Editor used             : Max 2.5 / Photoshop 5 / MD3 Compiler
+Known Bugs              : None to my knowledge
+
+* How to use this model *
+
+Simply unzip this archive to your "BASEQ3" directory and rename the
+"OBIQ3MODEL01.PK3" file to the next "PAK" file in line. If your last "PAK"
+file was "PAK2.PK3" then this one would be "PAK3.PK3". Now run the game.
+Go to the menu where you select your model and click on the icon. That's it!!
+
+* Copyright / Permissions *
+
+QUAKE(R) and QUAKE II(R) are registered trademarks of id Software, Inc.
+
+Distribute with all files in the archive un-edited.
+

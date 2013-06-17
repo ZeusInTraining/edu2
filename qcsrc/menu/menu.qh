@@ -1,0 +1,67 @@
+#define localcmd cmd
+
+#define NULL (null_entity)
+
+// constants
+
+const string string_null;
+const vector eX = '1 0 0';
+const vector eY = '0 1 0';
+const vector eZ = '0 0 1';
+
+const float GAME_ISSERVER 	= 1;
+const float GAME_CONNECTED	= 2;
+const float GAME_DEVELOPER	= 4;
+
+// prototypes
+
+float Menu_Active;
+float gamestatus;
+
+const float S_SHIFT = 1;
+const float S_CTRL = 2;
+const float S_ALT = 4;
+
+float frametime;
+float time;
+// use this to disable menu background rendering
+float menuHideBackground;
+
+entity main;
+void m_hide();
+void m_display();
+void m_goto(string name);
+.string name;
+
+entity keyGrabber;
+.void(entity me, float key, float ascii) keyGrabbed;
+
+float conwidth, conheight; // "virtual" conwidth/height values for other stuff to assume for scaling
+
+void RenotifyAll();
+
+void SUB_Null();
+
+float preMenuInit(); // you have to define this for pre-menu initialization. Return 0 if initialization needs to be retried a frame later, 1 if it succeeded.
+void preMenuDraw(); // this is run before the menu is drawn. You may put some stuff there that has to be done every frame.
+void postMenuDraw(); // this is run just after the menu is drawn (or not). Useful to draw something over everything else.
+
+// putting it here because its executed early
+// TODO: move this into its own file!!
+float messageLog_StringBuffer;
+const float messageLog_maxNumMessages = 1024;
+float messageLog_endIndex;
+float messageLog_wrapped;
+entity messageLog_listBox;
+
+void() MessageLog_Init;
+void( string message ) MessageLog_Add;
+float() MessageLog_GetCount;
+
+string( float index ) MessageLog_Get;
+
+var void() menu_delayed_function = SUB_Null;
+var float menu_delayed_time = -1;
+
+float menu_registry;
+const string MENU_REGISTRY_FILE = "menu.registry";

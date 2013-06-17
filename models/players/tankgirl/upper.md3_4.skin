@@ -1,0 +1,7 @@
+tag_head,
+tag_weapon,
+u_torso,models/players/tankgirl/upper_tanicha.tga
+u_bat,models/players/tankgirl/bat_tintin.tga
+u_rocketbra,textures/common/nodraw
+u_pauldron,models/players/tankgirl/pauldron_tanicha.tga
+tag_torso,

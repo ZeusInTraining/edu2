@@ -1,0 +1,47 @@
+Nov. 30, 2000				attorney
+				for Political Arena Q3 Mod
+			   http://planetquake.com/politicalarena
+			stand-alone model; no other files required
+================================================================
+Model Names             : attorney
+installation 		: place md3-attorney.pk3 in your Quake III Arena\baseq3 directory
+Author                  : todd gantzler
+
+Email Address           : toddg@planetquake.com
+
+Web Site                : http://planetquake.com/politicalarena
+
+Model description	: modeled and animated in 3DSMAX, 
+			  animations based on Paul Steed's Visor animations.
+			  features a unique taunt animation!
+
+Other info  		: custom sounds, bot support
+
+Additional Credits to   : Paul Steed for the .bip files
+
+================================================================
+* Play Information *
+
+New Sounds              : yes
+CTF Skins               : yes
+Bot Support             : yes
+Level of Detail		: no
+
+* Construction *
+Poly Count              : ~950
+Skin Count              : 3
+Base			: for animations, Paul Steeds Visor
+Editor used             : built in 3DSMax
+Known Bugs              : some interpenetration, minor physique issues
+Build/Animation time    : body:about two weeks, part time, mostly tweaking skins and animations
+			
+* Copyright / Permissions *
+copyright (c) 2000 todd gantzler
+QUAKE(R) and QUAKE II(R) and QUAKE III Arena(R) are registered trademarks of 
+id Software, Inc.
+
+Distibute as you wish, but please distribute the entire md3-attorney.zip file, 
+with nothing changed or removed.
+
+
+

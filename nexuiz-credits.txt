@@ -1,0 +1,223 @@
+**EDU 2
+
+Lars Burkhardt
+Wiebe Fölster
+Thomas Fraerks
+
+Katrin Kimpfbeck
+Alexander Koehler
+Franziska Lehnert
+Ji Li
+Michael Moers
+Steve Schenzel
+Martin Schneider
+
+Marc Skudlabski
+
+Diana  Zschögener
+
+Jarno Müller
+* to be removed
+
+**Level Design
+Sebastian Kratz
+Tobias Seeber
+Frank Wagner
+
+**Web
+Thomas Holbach
+* Design & Content: Wiki, Campus
+
+** Programming
+Andreas Kirsch
+* Lead Code Monkey
+Frank Richter
+* Programmer and 3rd-party expert
+
+** Project Leads:
+Thorsten Flügel
+* Producer
+
+(Prof.) Dr. Jörg Müller-Lietzkow
+* Seminarleitung
+
+**EDU 1
+
+**Game Design:
+Peter Fey
+Alexander Köhler
+Wiebe Fölster
+Denise Urbach 
+Alex Paulski
+
+**Editoren:
+Thorsten Flügel
+Sebastian Kratz
+Tobias Seeber
+Ji Li
+Frank Wagner
+Martin Schneider
+
+**Texturen und Modelle:
+Grit Tirian
+Jakob Maier
+Florian Jurig
+Torsten Felix
+Julia Bierau
+Constance Hennig
+Thomas Jahn
+Diana Zschögener
+
+**Sound und Musik:
+Michael Moers
+Fabian Ruckteschler
+
+**Content:
+Franziska Lehnert
+Steve Schenzel
+Stefanie Haupt 
+Katrin Kimpfbeck
+Lars Burkhardt
+Christoph Matiss
+Daniel Maßberg
+Sebastian Schieweck
+
+**Dokumentation und Öffentlichkeitsarbeit:
+Franziska Lehnert
+Daniel Wodniczak
+Andreas FJ Waidosch
+
+**Programmierung:
+Frank Richter
+
+**Producer:
+Thorsten Flügel
+
+**Gesamtmanagement:
+Dr. Jörg Müller- Lietzkow (a.k.a Masterchief)
+
+*Entstanden im Rahmen eines Seminars
+*an der Friedrich-Schiller-Universität Jena
+*Fakultät für Sozial- und Verhaltenswissenschaften
+*Bereich Medienwissenschaft
+*Arbeitsfeld Kommunikationswissenschaft
+*Sommersemester 2007
+
+*Basiert auf und benutzt
+*Nexuiz von Alientrap
+*www.nexuiz.org      www.alientrag.org
+
+**Team:
+
+Lee Vermeulen
+*Project Founder and Co-Designer
+
+Forest "LordHavoc" Hale
+*Lead Programmer and Co-Designer
+
+SavageX
+*Project Maintainer
+
+
+
+**In alphabetical order
+**(nickname or surname)
+
+
+Andreas "Black" Kirsch
+*Programmer
+
+Kurt Dereli
+*Lead Artist
+
+Yves "EviLair" Allaire 
+*Artist
+
+Stephan "esteel" Stahl
+*Programmer
+
+Fabien "H. Reaper" Tschirhart 
+*Level Designer
+
+"Innovati"
+*Menu Artist
+
+KadaverJack
+*Programmer
+
+MauveBib
+*Bot Programmer
+
+Peter "Morphed" Pielak
+*2d Artist, Menu Artist
+
+Rick "Rat" Kelley
+*Lead Animator, Skinner 
+
+Rudolf "div0" Polzer
+*Programmer
+
+Paul "Strahlemann" Evers
+*Co-Lead Level Designer
+
+Gottfried "Toddd" Hofmann
+*Sound FX 
+
+Marko "Urre" Permanto
+*Bot Programmer
+
+Dan "Wazat" Hale
+*Programmer
+
+Garth "Zombie" Hendy
+*Level Designer
+
+
+
+**Thanks:
+
+Gerd "Elysis" Raudenbusch
+Qantourisc
+Tymo
+Spirit
+Attila "WW3" Houtkooper
+GreEn`mArine
+Dan "Digger" Korostelev
+Kristian "morfar" Johansson
+leileilol
+Jody Gallagher
+Donkey
+Vortex
+Juergen "LowDragon" Timm
+Sajt
+Supajoe
+lcatlnx
+Zenex
+Q1 Retexturing Project
+Tomaz
+Jitspoe
+"Parapraxis"
+NoelCower
+Brain Younds
+Spike
+Petithomme
+Tei
+Munyul
+Mathieu "Elric" Olivier
+SomeGuy
+Lee David Ash
+Shank
+FrikaC
+Dustin Geeraert
+Steve Vermeulen
+Edgenetwork
+Clinton "Kaziganthe" Freeman
+Jakob "tZork" Markstrom Grohn
+BigMac
+Mephisto
+michaelb
+dstrek
+Netzwerg
+Ulrich Galbraith
+Christian Ice
+Wolfgang "Blub\0" Bumiller

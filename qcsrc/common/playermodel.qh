@@ -1,0 +1,94 @@
+// only used by cgame and menu atm
+
+// partially from Zymotic SVN
+// TODO: comment the defs out since they are not used at the moment
+/*
+const float ANIMTYPE_STAND = 0;
+const float ANIMTYPE_WALKFORWARD = 1;
+const float ANIMTYPE_WALKBACK = 2;
+const float ANIMTYPE_WALKLEFT = 3;
+const float ANIMTYPE_WALKRIGHT = 4;
+const float ANIMTYPE_RUNFORWARD = 41;
+const float ANIMTYPE_RUNBACK = 42;
+const float ANIMTYPE_RUNLEFT = 43;
+const float ANIMTYPE_RUNRIGHT = 44;
+const float ANIMTYPE_DYING = 10;
+const float ANIMTYPE_DEAD = 11;
+const float ANIMTYPE_GIBBED = 12;
+const float ANIMTYPE_JUMP = 20;
+const float ANIMTYPE_FALL = 21;
+const float ANIMTYPE_IDLE = 30;
+const float ANIMTYPE_FIRE1 = 31;
+const float ANIMTYPE_FIRE2 = 32;
+const float ANIMTYPE_FIRE3 = 33;
+const float ANIMTYPE_FIRE4 = 34;
+const float ANIMTYPE_RELOAD = 35;
+const float ANIMTYPE_LOWER = 36;
+const float ANIMTYPE_RAISE = 37;*/
+
+// move these definitions somewhere else
+// Im going to add specific code here, although it should belong into player.qc/h
+const string PLAYERMODEL_PATH_PREFIX = "models/players/";
+const float PLAYERMODEL_PATH_PREFIX_LENGTH = 15;
+const string PLAYERMODEL_LEGS_SUFFIX = "/lower.md3";
+const float PLAYERMODEL_LEGS_SUFFIX_LENGTH = 10;
+const string PLAYERMODEL_TORSO_SUFFIX = "/upper.md3";
+const float PLAYERMODEL_TORSO_SUFFIX_LENGTH = 10;
+const string PLAYERMODEL_HEAD_SUFFIX = "/head.md3";
+const float PLAYERMODEL_HEAD_SUFFIX_LENGTH = 9;
+
+#ifndef MENU
+const float PLAYERMODEL_SCALE = 1.4;
+#else
+const float PLAYERMODEL_SCALE = 1.0;
+#endif
+
+.vector viewOffset;
+
+enum {
+	PM_LEGS = 0,
+	PM_TORSO,
+	PM_HEAD,
+	PM_NUM_PARTS = 3
+};
+
+string( string model, float type ) PlayerModel_GetSubModelPath;
+string( string path, float type ) PlayerModel_GetModelFromPath;
+
+const float ANIM_INTERVAL = 0.0333; // 1/30.0
+
+// startFrame endFrame SPF (seconds per frame)
+.vector animData[ANIM_COUNT];
+
+.float currentAnim;
+.vector viewOffset;
+// cache for the current animation data (in case we want to change the storage code) (or rather because it might become mixed soon)
+.vector currentAnimData;
+// see zymotic util.qc for the concept (too lazy)
+.float currentAnimAccumulation;
+
+typedef void(entity player, float finished) AnimOnFrameChange;
+.AnimOnFrameChange currentAnimOnFrameChange;
+
+.entity torso;
+.entity head;
+.entity legs;
+
+//.float basetransform_tag;
+
+// TODO: should really the legs be the main model?
+
+void PlayerModel_Init (entity player, float isLocalPlayer);
+
+void PlayerModel_SetModel (entity player, string legsModel, float legsSkin, string torsoModel, float torsoSkin, string headModel, float headSkin);
+
+void PlayerModel_SetPosition (entity player, vector org);
+void PlayerModel_SetAngles (entity player, vector playerAngles, vector torsoAngles, vector headAngles );
+
+void PlayerModel_Destroy(entity player);
+
+// actually the animation faff belongs into its own file since legs and torso both need to be animated differently :-/
+void PlayerModel_AnimationThink(entity player);
+void PlayerModel_StartAnimation(entity player, float anim, AnimOnFrameChange onFrameChange_Legs, AnimOnFrameChange onFrameChange_Torso );
+
+void PlayerModel_LoadAnimationCfg(entity playerPart, string modelDir);
